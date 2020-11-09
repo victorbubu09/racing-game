@@ -16,7 +16,21 @@ public class App
           referintaMasina.nrUsi =  2;
           referintaMasina.culoare = " Rosu";
 
-        System.out.println("Proproetati masina: " + referintaMasina.nume);
+          Motor motor1 = new Motor();
+          motor1.producator = "Ferrari";
+          motor1.capacitate = 3000;
+
+          referintaMasina.motor = motor1;
+        System.out.println("Capacitatea motorului este: " + motor1.capacitate);
+        System.out.println("Capacitatea masini este: " + referintaMasina.motor.capacitate);
+
+        motor1.capacitate = 4000;
+        System.out.println("Capacitatea dupa update a  masinii este: " + referintaMasina.motor.capacitate);
+
+
+
+
+        System.out.println("Nume masina: " + referintaMasina.nume);
         System.out.println("Viteaza maxima: " + referintaMasina.vitezaMax);
         System.out.println("Total benzina: " + referintaMasina.totalBenzina);
         System.out.println("Consum mediu: " + referintaMasina.consumMediu);
@@ -31,7 +45,20 @@ public class App
         masina2.totalBenzina = 70;
         masina2.distantaTotalaParcursa = 100;
 
-        System.out.println("Proproetati masina: " + masina2.nume);
+
+        masina2.motor = new Motor();
+        masina2.motor.capacitate = 1000;
+        System.out.println("Capacitatea masinii 2 este: " + masina2.motor.capacitate);
+
+
+
+
+
+
+
+
+
+        System.out.println("Nume masina: " + masina2.nume);
         System.out.println("Viteaza maxima: " + masina2.vitezaMax);
         System.out.println("Total benzina: " + masina2.totalBenzina);
         System.out.println("Consum mediu: " + masina2.consumMediu);

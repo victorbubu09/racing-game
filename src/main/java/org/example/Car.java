@@ -12,6 +12,9 @@ public class Car {
     boolean daune;
     String culoare;
 
+    Motor motor;
+
+
 
 
 }
